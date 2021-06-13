@@ -1,5 +1,5 @@
 # BSCPad Binance Smart Chain Network
-**User Management JSP** is a frontend with no backend written in React.js.
+**BSCPad Binance Smart Chain Network** is a frontend with no backend written in React.js.
 
 ### Prerequisites
 
