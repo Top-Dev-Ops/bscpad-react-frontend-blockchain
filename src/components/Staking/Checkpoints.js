@@ -2,8 +2,6 @@ import React from 'react';
 
 import { Form } from 'react-bootstrap';
 
-import PropTypes from 'prop-types';
-
 import CheckpointCard from './CheckpointCard';
 
 import { stakings } from '../../assets/variables';

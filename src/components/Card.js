@@ -11,7 +11,7 @@ export default function Card({ content }) {
     return (
         <section className="green-card">
             <div className="green-card-header">
-                <a href="/"><img src={content.picture}></img></a>
+                <a href="/"><img src={content.picture} alt='content'></img></a>
                 <div className="green-card-title">
                     <strong>{content.name}</strong>
                     <div>
@@ -27,7 +27,7 @@ export default function Card({ content }) {
                 </div>
             </div>
             <div className="green-card-body">
-                <img src={img} />
+                <img src={img} alt="laptop" />
 
                 <div className="d-flex justify-content-between align-items-center mt-3">
                     <h4 className="my-auto">YOUR STAKE</h4>

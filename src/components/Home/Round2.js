@@ -9,7 +9,7 @@ export default class Round2 extends Component {
                 <h2 className="col-12 text-center font-weight-bold round-title">ROUND 2 - FCFS ROUND</h2>
                 <div className="row">
                     <div className="col-md-6 mx-3 mx-md-0 text-center">
-                        <img src={img} />
+                        <img src={img} alt="network" />
                     </div>
                     <div className="col-md-6 mx-3 mx-md-0">
                         <p className="hero-description">In round 2, the unsold tokens from the first round are made available. All tiered members can purchase an additional amount that is determined by a tier-based formula. The second round buying window opens at the same time for all members, regardless of tier level. This round is open until all tokens are sold, typically lasting for only a few minutes. After all the tokens are sold, the IDO is concluded.</p>

@@ -15,7 +15,7 @@ export default class Hero extends Component {
                 <p className="text-center hero-description">BSCPad will empower crypto currency projects with the ability to distribute tokens and raise liquidity.</p>
                 <div className="buttons">
                     <button type="button" className="btn btn-warning button-large">View All Projects</button>
-                    <button type="button" className="btn btn-primary button-large">Buy On <img src={pancake_swap}></img> Pancake Swap</button>
+                    <button type="button" className="btn btn-primary button-large">Buy On <img src={pancake_swap} alt="pancake swap"></img> Pancake Swap</button>
                     <button type="button" className="btn btn-success button-large">Apply For IDO</button>
                 </div>
                 <div className="buttons">
@@ -25,9 +25,9 @@ export default class Hero extends Component {
                 </div>
                 <div className="buttons">
                     <h6>OUR PARTNERS</h6>
-                    <a href="www.google.com"><img src={partner_0} style={{ height: '46px' }} /></a>
-                    <a href="www.google.com"><img src={partner_1} style={{ height: '46px' }} /></a>
-                    <a href="www.google.com"><img src={partner_2} style={{ height: '46px' }} /></a>
+                    <a href="https://www.google.com"><img src={partner_0} style={{ height: '46px' }} alt="chainlink" /></a>
+                    <a href="https://www.google.com"><img src={partner_1} style={{ height: '46px' }} alt="ferrum network" /></a>
+                    <a href="https://www.google.com"><img src={partner_2} style={{ height: '46px' }} alt="bondly" /></a>
                 </div>
             </div>
         );

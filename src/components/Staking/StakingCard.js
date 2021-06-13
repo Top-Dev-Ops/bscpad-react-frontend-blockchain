@@ -2,8 +2,6 @@ import React from 'react';
 
 import PropTypes from 'prop-types';
 
-import { stakings } from '../../assets/variables';
-
 export default function StakingCard({ content }) {
     return (
         <section className="round-card" style={{ marginBottom: `${['Stacked', 'Unstacked', 'Rewards'].includes(content.name) ? '30px' : undefined}` }}>

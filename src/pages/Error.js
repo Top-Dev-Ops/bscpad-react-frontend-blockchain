@@ -1,15 +1,13 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 import { cards } from '../assets/variables';
 
 import Card from '../components/Card';
-import Switch from '../components/Switch';
 
 export default function Error() {
 
     return (
         <>
-            <Switch />
             <h1 className="text-white text-center font-weight-bold">Project</h1>
             <div className="row mx-0">
                 {cards.map((card, index) => {

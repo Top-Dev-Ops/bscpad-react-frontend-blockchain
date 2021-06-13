@@ -8,7 +8,7 @@ export default function AdvisorCard({ advisor }) {
     return (
         <section className="round-card advisor-card">
             <div className="round-card-header">
-                <img src={advisor.picture}></img>
+                <img src={advisor.picture} alt="avatar"></img>
             </div>
 
             <div className="round-card-body">

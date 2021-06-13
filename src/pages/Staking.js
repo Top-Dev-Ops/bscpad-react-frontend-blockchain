@@ -1,8 +1,5 @@
 import React, { useState } from 'react';
 
-// redux
-import { useSelector } from 'react-redux';
-
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Tabs from '../components/Staking/Tabs';
@@ -14,12 +11,10 @@ import Warning from '../components/Staking/Warning';
 import { stakings } from '../assets/variables';
 
 export default function Staking() {
-    const { loading } = useSelector(state => state.ui);
 
     const [wizard, setWizard] = useState('stake');
 
     const selectWizard = tab => {
-        console.log(tab);
         setWizard(tab);
     }
 

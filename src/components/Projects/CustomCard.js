@@ -2,9 +2,6 @@ import React from 'react';
 
 import PropTypes from 'prop-types';
 
-// redux
-import { useSelector, useDispatch } from 'react-redux';
-
 import { SiWebpack, AiFillTwitterCircle, AiOutlineMedium, FaTelegramPlane, BsCircleFill } from 'react-icons/all';
 import { ProgressBar } from 'react-bootstrap';
 
@@ -12,14 +9,14 @@ export default function CustomCard({ project }) {
     return (
         <section className="custom-card">
             <div className="custom-card-header">
-                <a href="/"><img src={project.picture}></img></a>
+                <a href="/"><img src={project.picture} alt="project profile"></img></a>
                 <div className="custom-card-title">
                     <strong>{project.name}</strong>
                     <div className="social-links">
-                        <a href="www.google.com"><SiWebpack className="social-link" /></a>
-                        <a href="www.google.com"><AiFillTwitterCircle className="social-link" /></a>
-                        <a href="www.google.com"><AiOutlineMedium className="social-link" /></a>
-                        <a href="www.google.com"><FaTelegramPlane className="social-link" /></a>
+                        <a href="https://www.google.com"><SiWebpack className="social-link" /></a>
+                        <a href="https://www.twitter.com"><AiFillTwitterCircle className="social-link" /></a>
+                        <a href="https://www.medium.com"><AiOutlineMedium className="social-link" /></a>
+                        <a href="https://www.telegram.com"><FaTelegramPlane className="social-link" /></a>
                     </div>
                     <span className="status" style={{ backgroundColor: `${project.status === 'Coming' ? 'rgb(240 185 19 / 26%)' : project.status === 'Open' ? 'rgb(92 184 92 / 26%)' : 'rgb(255 0 0 / 25%)'}`, color: `${project.status === 'Coming' ? '#f1b90c' : project.status === 'Open' ? '#5cb85c' : 'red'}` }}>
                         <BsCircleFill style={{ fontSize: '.6rem', verticalAlign: 'middle' }} />

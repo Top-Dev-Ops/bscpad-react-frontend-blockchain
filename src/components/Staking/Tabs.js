@@ -1,16 +1,10 @@
 import React, { useState } from 'react';
 
-import PropTypes from 'prop-types';
-
-// redux
-import { useSelector } from 'react-redux';
-
 import { stakings } from '../../assets/variables';
 
 import StakingCard from './StakingCard';
 
 function Tabs({ selectTab }) {
-    const { loading } = useSelector(state => state.ui);
 
     const [tab, setTab] = useState('stake');
 
@@ -19,13 +13,13 @@ function Tabs({ selectTab }) {
             <div className="col-xl-4">
                 <ul className="tabs">
                     <li className="nav-item">
-                        <button className={tab === 'stake' ? 'nav-link active' : 'nav-link'} id="stake-tab" type="button" aria-controls="stake" aria-selected="true" onClick={() => { setTab('stake'); selectTab('stake') }}>Stake</button>
+                        <button className={tab === 'stake' ? 'nav-link active' : 'nav-link'} id="stake-tab" type="button" aria-controls="stake" onClick={() => { setTab('stake'); selectTab('stake') }}>Stake</button>
                     </li>
                     <li className="nav-item">
-                        <button className={tab === 'unstake' ? 'nav-link active' : 'nav-link'} id="unStake-tab" type="button" aria-controls="unstake" aria-selected="false" onClick={() => { setTab('unstake'); selectTab('unstake') }}>Unstake</button>
+                        <button className={tab === 'unstake' ? 'nav-link active' : 'nav-link'} id="unStake-tab" type="button" aria-controls="unstake" onClick={() => { setTab('unstake'); selectTab('unstake') }}>Unstake</button>
                     </li>
                     <li className="nav-item">
-                        <button className={tab === 'withdraw' ? 'nav-link active' : 'nav-link'} id="withdraw-tab" type="button" aria-controls="withdraw" aria-selected="false" onClick={() => { setTab('withdraw'); selectTab('withdraw') }}>Withdraw</button>
+                        <button className={tab === 'withdraw' ? 'nav-link active' : 'nav-link'} id="withdraw-tab" type="button" aria-controls="withdraw" onClick={() => { setTab('withdraw'); selectTab('withdraw') }}>Withdraw</button>
                     </li>
                 </ul>
             </div>

@@ -21,7 +21,7 @@ export default class AboutUs extends Component {
                     </div>
                     <div className="col-md-6 mx-3 mx-md-0 text-center rotation-container">
                         <div className="rotation"></div>
-                        <img src={aboutus} />
+                        <img src={aboutus} alt="about us" />
                     </div>
                 </div>
             </div >
