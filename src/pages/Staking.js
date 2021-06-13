@@ -15,6 +15,7 @@ export default function Staking() {
     const [wizard, setWizard] = useState('stake');
 
     const selectWizard = tab => {
+        console.log(tab);
         setWizard(tab);
     }
 
